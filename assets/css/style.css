@@ -1,0 +1,105 @@
+:root {
+    --text-black: black;
+    --background-pink: #efe0e0;
+    --background-black: black;
+    --text-white:white;
+ }
+ 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+
+body{
+    background-color:var(--background-pink)
+ }
+
+header{
+    display: flex;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:var(--background-black);
+    color:var(--text-white);
+ }
+
+a {
+    color: var(--text-white);
+    background-color:var(--background-black);
+    text-decoration: none;
+}
+
+hr {
+    border: dotted black 6px;
+    border-bottom: none;
+    margin: 30px;   
+}
+
+h1{
+    display: inline-block;
+    margin-left: 10px;
+    background-color:var(--background-black);
+    font-size: 48px;
+}
+
+h2{
+    text-align: center;
+    margin: auto 10px auto 10px;
+}
+
+nav{
+    margin-left: auto;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px;
+} 
+
+figure img {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    object-fit: cover;
+}
+
+#About-me img{
+    margin: 20px;
+}
+
+#About-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#About-me img{
+    border-radius: 4px;
+    width: 200px;
+}
+
+#Work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Work img{
+    border-radius: 4px;
+    width: 300px;
+}
+
+#Contact-me{
+    display: flex;
+}
+
+ul{
+    margin:auto;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    margin: 20px 0 0 0 ;
+    background-color: var(--background-black);
+    color: var(--text-white);
+}
