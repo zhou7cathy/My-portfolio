@@ -51,6 +51,10 @@ nav{
     margin-left: auto;
 }
 
+ul{
+    margin:auto;
+}
+
 ul li {
     display: inline-block;
     margin: 10px;
@@ -63,14 +67,41 @@ figure img {
     object-fit: cover;
 }
 
+main{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .card.one{
+    flex: 4 0 200px;
+}
+
+
+main img{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    object-fit: cover;
+
+}
+
 #About-me{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
 }
 
 #About-me img{
-    margin: 20px;
+    margin: 30px;
     border-radius: 4px;
     width: 200px;
 }
@@ -79,9 +110,7 @@ figure img {
     display: flex;
 }
 
-ul{
-    margin:auto;
-}
+
 
 footer{
     text-align: center;
@@ -97,3 +126,9 @@ footer{
     color: var(--text-black);
 }
 
+@media screen and (max-width:527px) {
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+  }
