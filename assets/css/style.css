@@ -47,6 +47,10 @@ h2{
     margin: auto 20px auto 20px;
 }
 
+p{
+    font-family: "Times New Roman", Times, serif;
+}
+
 nav{
     margin-left: auto;
 }
@@ -81,8 +85,8 @@ main{
     border-width: 1px;
   }
 
-  .card.one{
-    flex: 4 0 200px;
+.card.one{
+    flex: 200 0 200px;
 }
 
 
@@ -91,16 +95,32 @@ main img{
     width: 100%;
     margin-bottom: 25px;
     object-fit: cover;
+}
 
+main header{
+    background-color: var(--background-pink);
+    color: var(--text-black);
+    
+}
+
+main a{
+    background-color: var(--background-pink);
 }
 
 #About-me{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#About-me p{
+    max-width: 50%;
 }
 
 #About-me img{
+    max-width: 50%;
     margin: 30px;
     border-radius: 4px;
     width: 200px;
@@ -109,8 +129,6 @@ main img{
 #Contact-me{
     display: flex;
 }
-
-
 
 footer{
     text-align: center;
@@ -125,6 +143,21 @@ footer{
     background-color:var(--background-pink);
     color: var(--text-black);
 }
+
+.card{
+    max-width: 50%;
+}
+
+@media screen and (max-width:822px) {
+    #About-me{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+        align-content: center;
+    }
+
+  }
 
 @media screen and (max-width:527px) {
     nav ul{
