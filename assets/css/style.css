@@ -1,8 +1,9 @@
 :root {
     --text-black: black;
-    --background-pink: #efe0e0;
+    --background-pink: #dbd1d1;
     --background-black: black;
-    --text-white:white;
+    --background-card:rgb(193, 181, 181);
+    --text-white:rgb(179, 174, 174);
  }
 
 *{
@@ -74,22 +75,6 @@ figure img {
 main{
     display: flex;
     flex-wrap: wrap;
-
-}
-
-.card{
-    flex: 1 0 200px;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-  }
-
-.card.one{
-    flex: 200 0 200px;
-}
-
-main{
     width: 100%;
 }
 
@@ -104,15 +89,35 @@ main img{
     object-fit: cover;
 }
 
+main section{
+    background-color: var(--background-card);
+    margin: 20px;
+    width: 100%;
+}
+
 main header{
-    background-color: var(--background-pink);
+    background-color: var(--background-card);
     color: var(--text-black);
-    
 }
 
 main a{
-    background-color: var(--background-pink);
+    background-color: var(--background-card);
 }
+
+.card{
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+.card.one{
+    flex: 200 0 200px;
+    width:100%
+}
+
+
 
 #About-me{
     display: flex;
@@ -152,11 +157,11 @@ footer{
 }
 
 .card{
-    max-width: 50%;
+    max-width: 80%;
 }
 
 .card:hover {
-  box-shadow: inset 0px 0px 8px purple, 0 0 15px purple;
+  box-shadow: inset 0px 0px 8px rgb(74, 55, 74), 0 0 15px rgb(74, 55, 74);
 }
 
 
@@ -166,7 +171,7 @@ footer{
     }
     main{
         flex-direction: column;
-        align-content: center;
+        align-items: center;
     }
 
   }
