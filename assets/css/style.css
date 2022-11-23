@@ -6,6 +6,12 @@
     --text-white:rgb(179, 174, 174);
  }
 
+ html,
+ body{
+   width:100%;
+   overflow-x:hidden;
+ }
+ 
 *{
     box-sizing: border-box;
     padding: 0;
