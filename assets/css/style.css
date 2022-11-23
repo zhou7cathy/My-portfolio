@@ -4,7 +4,7 @@
     --background-black: black;
     --text-white:white;
  }
- 
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -89,6 +89,13 @@ main{
     flex: 200 0 200px;
 }
 
+main{
+    width: 100%;
+}
+
+main h2{
+    width: 100%;
+}
 
 main img{
     height: 400px;
@@ -147,6 +154,11 @@ footer{
 .card{
     max-width: 50%;
 }
+
+.card:hover {
+  box-shadow: inset 0px 0px 8px purple, 0 0 15px purple;
+}
+
 
 @media screen and (max-width:822px) {
     #About-me{
