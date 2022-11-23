@@ -6,12 +6,6 @@
     --text-white:rgb(179, 174, 174);
  }
 
- html,
- body{
-   width:100%;
-   overflow-x:hidden;
- }
- 
 *{
     box-sizing: border-box;
     padding: 0;
@@ -67,6 +61,15 @@ ul li {
     margin: 10px;
 } 
 
+nav ul li a:hover{
+    color: pink;
+    text-decoration: underline;
+}
+
+#Contact-me ul li a:hover{
+    text-decoration: underline;
+}
+
 figure img {
     height: 400px;
     width: 100%;
@@ -81,7 +84,7 @@ p{
 main{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-content: center;
     justify-content: space-evenly;
     width: 100%;
 }
