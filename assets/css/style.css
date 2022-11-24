@@ -17,23 +17,17 @@ body{
  }
 
 header{
-    display: flex;
     align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color:var(--background-black);
     color:var(--text-white);
+    display: flex;
  }
 
 a {
     color: var(--text-white);
     background-color:var(--background-black);
     text-decoration: none;
-}
-
-hr {
-    border: dotted black 6px;
-    border-bottom: none;
-    margin: 30px;   
 }
 
 h1{
@@ -46,6 +40,22 @@ h1{
 h2{
     text-align: center;
     margin: auto 20px auto 20px;
+}
+
+h3{
+    background-color: var(--background-card);
+    color: var(--text-black);
+    font-family: "Times New Roman", Times, serif;
+}
+
+p{
+    font-family: "Times New Roman", Times, serif;
+}
+
+hr {
+    border: dotted black 6px;
+    border-bottom: none;
+    margin: 30px;   
 }
 
 nav{
@@ -61,24 +71,11 @@ ul li {
     margin: 10px;
 } 
 
-nav ul li a:hover{
-    color: pink;
-    text-decoration: underline;
-}
-
-#Contact-me ul li a:hover{
-    text-decoration: underline;
-}
-
 figure img {
     height: 400px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     object-fit: cover;
-}
-
-p{
-    font-family: "Times New Roman", Times, serif;
 }
 
 main{
@@ -86,7 +83,6 @@ main{
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
-    width: 100%;
 }
 
 main h2{
@@ -94,7 +90,6 @@ main h2{
 }
 
 main img{
-    height: 400px;
     width: 100%;
     margin-bottom: 25px;
     object-fit: cover;
@@ -104,12 +99,6 @@ main section{
     background-color: var(--background-card);
     margin: 20px;
     width: 100%;
-}
-
-main header{
-    background-color: var(--background-card);
-    color: var(--text-black);
-    font-family: "Times New Roman", Times, serif;
 }
 
 main a{
@@ -132,10 +121,6 @@ main a{
 .contact{
     background-color:var(--background-pink);
     color: var(--text-black);
-}
-
-.card:hover {
-  box-shadow: inset 0px 0px 8px rgb(74, 55, 74), 0 0 15px rgb(74, 55, 74);
 }
 
 #About-me{
@@ -168,7 +153,22 @@ footer{
     background-color: var(--background-black);
     color: var(--text-white);
 }
+  
+/* The following section content hover effects on nav bar, card and button in the contact me. */
+  nav ul li a:hover{
+      color: pink;
+      text-decoration: underline;
+  }
 
+  .card:hover {
+    box-shadow: inset 0px 0px 8px rgb(74, 55, 74), 0 0 15px rgb(74, 55, 74);
+  }
+  
+  #Contact-me ul li a:hover{
+      text-decoration: underline;
+  }
+
+   /* The following section content media screen for responsive layout when page resize */
 @media screen and (max-width:822px) {
     #About-me{
         flex-direction: column;
@@ -178,11 +178,9 @@ footer{
         align-items: center;
     }
     .card.one{
-        height: 550px;
         width: 1000px;
     }
     .card{
-        height:550px;
         width:500px;
     }
 
